@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: transitionIn 2s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background:url("icons/health-still-life-with-copy-space.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden; 
+}
+
+.container .box{
+    width: 350px;
+    height: 400px;
+    background-color: rgb(204, 255, 255);
+    overflow: hidden;
+    border-radius: 15px;
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    transform: translate(-65%, -80%);
+    box-shadow: rgba(214, 222, 237, 0.822) 0px -23px 25px 0px inset, rgba(123, 186, 207, 0.466) 0px -36px 30px 0px inset, rgba(147, 213, 236, 0.694) 0px -79px 40px 0px inset, rgba(112, 171, 187, 0.429) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+#login{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#login:hover{
+    color: purple;
+}
+
+#signUp{
+    cursor: pointer;
+}
+
+#signUp:hover{
+    color: purple;
+}
+
+.control p{
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+#bar{
+    margin-top: 8px;
+    width: 100px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: rgba(47, 84, 101, 0.737);
+    display: block;
+    position: absolute;
+    left: 8%;
+    transition: all 0.5s ease-in-out;
+}
+
+.loginBox{
+    margin-top: 30px;
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    border-width: 2px;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    border: 0px solid black;
+    border-radius: 15px;
+    padding: 5px 0;
+    margin: 10px 0;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    text-align: center;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+.rememberme{
+    width: 15px;
+}
+
+.remembermeText{
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+button{
+    float: right;
+    
+    outline: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 0px solid rgb(106, 106, 106);
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -6px 6px 0px inset, rgba(0, 0, 0, 0.15) 0px -6px 6px 0px inset, rgba(0, 0, 0, 0.1) 0px -6px 6px 0px inset, rgba(0, 0, 0, 0.06) 0px 5px 5px, rgba(0, 0, 0, 0.09) 0px 5px 5px, rgba(0, 0, 0, 0.09) 0px 5px 5px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    /* padding: 12px 17px; */
+    transform: scale(1.1);
+}
+
+.forgotPassword{
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    left: 50%;
+    width: 150px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.forgotPassword a{
+    color: blue;
+}
+
+.dontHave{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    width: 150px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.signUpBox{
+    margin-top: 30px;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}

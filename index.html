@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <header>
+        <div class="nav-msg">
+            <p class="text1">HEALTH & WELLNESS</p>
+        </div>
+        <div class="nav-bar">
+            <div class="store-icon">
+                <i class="uil uil-location-point"></i>
+            </div>
+            <div class="store-location">
+                <p class="text2">STORE LOCATION</p>
+            </div>
+            <div class="about">
+                <p class="text2">ABOUT</p>
+            </div>
+            <div class="contact">
+                <p class="text2">CONTACT US</p>
+            </div>
+            <div class="blog">
+                <p class="text2">BLOG</p>
+            </div>
+            <div class="nav-search">
+                <div class="input-box"></div>
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search here..." id="placeholder">
+                    <button class="search-button">Search</button>
+            </div>
+            <div class="login" id="loginpage">
+                <i class="uil uil-signin"></i>
+                <button class="log-btn">Login / Register</button>
+            </div>
+            <div class="cart">
+                <i class="uil uil-shopping-cart-alt"></i>
+                <button class="cart-btn">Cart</button>
+            </div>
+        </div>
+        <div class="panel">
+            <button class="home" id="homepage">HOME</button>
+            <button class="release" id="doctorpage">FIND DOCTORS</button>
+            <button class="seller">LAB TESTS</button>
+            <button class="request">BUY MEDICINES</button>
+            <button class="festival">HEALTH RECORDS</button>
+            <button class="events">CIRCLE MEMBERSHIP</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-section">
+            <div class="image-slider">
+            <img src="icons/pic1.jpg" class="slide" alt="">
+            <img src="icons/pic2.jpg" class="slide" alt="">
+            <img src="icons/pic3.jpg" class="slide" alt="">  
+            <div class="slide-btn">
+                <button class="prev" onclick="goPrev()">&#10094;</button>
+                <button class="next" onclick="goNext()">&#10095;</button>
+            </div>
+            </div>
+            <div class="visit-button">
+                <button class="store-btn" onclick="">
+                    <i class="fa-solid fa-house-medical"></i>
+                    <p class="visi">Pharmacy Near Me</p>
+                    <p class="vis">FIND STORE</p>
+                    &#10095;</button>
+                <button class="medicines-btn" onclick="">
+                    <i class="fa-solid fa-prescription-bottle-medical"></i>
+                    <p class="visi">Get 20% off on Medicines</p>
+                    <p class="vis">UPLOAD NOW</p>
+                    &#10095;</button>
+                <button class="hospital-btn" onclick="">
+                    <i class="fa-regular fa-hospital"></i>
+                    <p class="visi">Hospital Visit</p>
+                    <p class="vis">PRE-BOOK</p>
+                    &#10095;</button>
+                </button>
+                <button class="video-btn" onclick="">
+                    <i class="fa-solid fa-video"></i>
+                    <p class="visi">Video Consult</p>
+                    <p class="vis">IN 15 MIN</p>
+                    &#10095;</button>
+                <button class="lab-btn" onclick="">
+                    <i class="fa-solid fa-vial"></i>
+                    <p class="visi">Lab Tests</p>
+                    <p class="vis">AT HOME</p>
+                    &#10095;</button>
+            </div>
+            <p class="category-text">SHOP BY CATEGORY</p>
+            <div class="category">
+                <div class="box">
+                    <div class="box-content" id="box-content-image-soft">
+                        <div class="box-image" style="background-image: url(icons/pic9.jpg);"></div>
+                        </div>
+                        <h2>Soft Products</h2>
+                    </div>
+
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-baby">
+                        <div class="box-image" style="background-image: url('icons/pic10.jpg');">
+                        </div>
+                        <h2>Baby Care</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-summer">
+                        <div class="box-image" style="background-image: url('icons/pic11.jpg');">
+                        </div>
+                        <h2>Summer Essentials</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-personal">
+                        <div class="box-image" style="background-image: url('icons/pic12.jpg');">
+                        </div>
+                        <h2>Personal Care</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-supplement">
+                        <div class="box-image" style="background-image: url('icons/pic13.jpg');">
+                        </div>
+                        <h2>Supplements</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-skin">
+                        <div class="box-image" style="background-image: url('icons/pic14.jpg');">
+                        </div>
+                        <h2>Skin Care</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-woman">
+                        <div class="box-image" style="background-image: url('icons/pic15.jpg');">
+                        </div>
+                        <h2>Woman Care</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-protein">
+                        <div class="box-image" style="background-image: url('icons/pic16.jpg');">
+                        </div>
+                        <h2>Protein Powder</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-multivitamin">
+                        <div class="box-image" style="background-image: url('icons/pic17.jpg');">
+                        </div>
+                        <h2>Multivitamins</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-test">
+                        <div class="box-image" style="background-image: url('icons/pic18.jpg');">
+                        </div>
+                        <h2>Test Strips</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-device">
+                        <div class="box-image" style="background-image: url('icons/pic19.jpg');">
+                        </div>
+                        <h2>Health Devices</h2>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content" id="box-content-image-ayurveda">
+                        <div class="box-image" style="background-image: url('icons/pic20.jpg');">
+                        </div>
+                        <h2>Ayurveds</h2>
+                    </div>
+                </div>
+            </div>
+
+            <p class="brand-category-text">SHOP BY BRAND</p>
+
+            <div class="brand-category">
+                <div class="box1">
+                    <div class="box1-image" style="background-image: url('icons/pampers.jpg');"></div>
+                    <h4>Pampers</h4>
+                </div>
+                <div class="box1">
+                    <div class="box1-image" style="background-image: url('icons/Cerave.jpg');"></div>
+                    <h4>Cerave</h4>
+                </div>
+                <div class="box1">
+                    <div class="box1-image" style="background-image: url('icons/OneTouch.jpg');"></div>
+                    <h4>OneTouch</h4>
+                </div>
+                <div class="box1">
+                    <div class="box1-image" style="background-image: url('icons/SUPRADYN.jpg');"></div>
+                    <h4>SUPRADYN</h4>
+                </div>
+                <div class="box1">
+                    <div class="box1-image" style="background-image: url('icons/OZIVA.jpg');"></div>
+                    <h4>OZIVA</h4>
+                </div>
+                <div class="box1">
+                    <div class="box1-image" style="background-image: url('icons/CANDID.jpg');"></div>
+                    <h4>CANDID</h4>
+                </div>
+
+            </div>
+
+            <div class="wellness">
+                <img src="icons/wellness.jpg" class="wellness">
+            </div>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="sign_in">
+            <div class="sign_msg">
+                See personalized recommendations
+            </div>
+            <div class="sign_btn">
+                <button>Sign in</button>
+            </div>
+            <div class="sta_msg">
+                New Customer?<a>Start here.</a>
+            </div>
+        </div>
+
+
+    <div class="foot_panel1">
+        Back to Top
+    </div>
+
+    <div class="foot_panel2">
+        <ul>
+        <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About</a>
+            <a>Health Queries</a>
+            <a>Corporate</a>
+            <a>FAQs</a>
+        </ul>
+
+        <ul>
+            <p>Services</p>
+                <a>Online Doctor Consultation</a>
+                <a>All Doctor List</a>
+                <a>Consult Physicians</a>
+                <a>Health Insurance</a>
+                <a>Consult Dermatologist</a>
+                <a>Consult Cardiolists</a>
+                <a>Consult Dibetologists</a>
+                <a>Consult ENT Specialistss</a>
+            </ul> 
+
+            <ul>
+                <p>Product Categories</p>
+                    <a>Personal Care</a>
+                    <a>Nutrition</a>
+                    <a>Immunity Boosters</a>
+                    <a>Dolo 650</a>
+            </ul>
+               
+        
+                <ul>
+                    <p>Let Us Help You</p>
+                        <a>COVID-19</a>
+                        <a>Your Account</a>
+                        <a>Your Orders</a>
+                        <a>Shipping Rates & Policies</a>
+                        <a>Return & Placements</a>
+                        <a>Health Devices</a>
+                        <a>Personal Assistant</a>
+                        <a>Help</a>
+                    </ul>
+    </div>
+
+    <div class="foot_panel3">
+        <div class="logo"></div>
+            <div class="globe_icon bor">
+                <i class="fa-solid fa-globe"></i>
+                English
+            </div>
+            <div class="dollar bor">
+                $  USD - U.S.Dollar
+            </div>
+            <div class="flag bor">
+                <i class="fa-regular fa-flag"></i>
+                Country
+            </div>
+    </div>
+
+
+    <div class="foot_panel4">
+        <div class="pages">
+            <a>Conditions Of Use</a>
+            <a>Privacy Notice</a>
+            <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+            © 1996-2024, Inc. or its affiliates
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

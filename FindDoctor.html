@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindDoctor</title>
+    <link rel="stylesheet" href="FindDoctor.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <header>
+        <div class="nav-msg">
+            <p class="text1">HEALTH & WELLNESS</p>
+        </div>
+        <div class="nav-bar">
+            <div class="store-icon">
+                <i class="uil uil-location-point"></i>
+            </div>
+            <div class="store-location">
+                <p class="text2">STORE LOCATION</p>
+            </div>
+            <div class="about">
+                <p class="text2">ABOUT</p>
+            </div>
+            <div class="contact">
+                <p class="text2">CONTACT US</p>
+            </div>
+            <div class="blog">
+                <p class="text2">BLOG</p>
+            </div>
+            <div class="nav-search">
+                <div class="input-box"></div>
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search here..." id="placeholder">
+                    <button class="search-button">Search</button>
+            </div>
+            <div class="login">
+                <i class="uil uil-signin"></i>
+                <button class="log-btn">Login / Register</button>
+            </div>
+            <div class="cart">
+                <i class="uil uil-shopping-cart-alt"></i>
+                <button class="cart-btn">Cart</button>
+            </div>
+        </div>
+        <div class="panel">
+            <button class="home" id="homepage">HOME</button>
+            <button class="release" id="doctorpage">FIND DOCTORS</button>
+            <button class="seller">LAB TESTS</button>
+            <button class="request">BUY MEDICINES</button>
+            <button class="festival">HEALTH RECORDS</button>
+            <button class="events">CIRCLE MEMBERSHIP</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="box">
+            <div class="find">
+			<form class="form" action="doctor" method="get">
+                <img src="icons/bookappointment.jpg" alt="" class="appointment-image">
+                <br>
+                    <i class="fa-solid fa-location-dot" id="location-icon"></i>
+                <h3>Preferred Location/Pincode*</h3>
+                <input type="text" name="address" class="Pincode" placeholder="Enter Pincode..">
+                <h3>Select Date*</h3>
+                <input type="date" name="date" class="date" placeholder="Enter Date..">
+                <h3>Select Time Slot*</h3>
+                <input type="time" name="time" class="time" placeholder="Enter Time Slot..">
+                <h3>Select Speciality*</h3>
+                <select name="speciality">
+                    <ul>
+                        <option>Select</option>
+                        <option>Urology</option>    
+                        <option>Cardiology</option>  
+                        <option>Physicians</option>
+                        <option>Dentist</option>
+                        <option>Ayurveda Practitioner</option>
+                        <option>Breast Surgeon</option>
+                        <option>Counseloptionng</option>
+                        <option>Diabetooptiongist</option>
+                        <option>ENT</option>
+                        <option>Gastroentrology</option>
+                        <option>Gynecologist</option>
+                        <option>Hepatologist</option>
+                    </ul>
+                </select>
+                <br>
+                <button class="submit-btn" type="submit" onclick="openPopup()">Submit</button>
+    			</form>
+                <div class="unwell">
+                    <h5>Feeling Unwell?</h5>
+                <p>Check your symptoms with this assessment in less than 3 min and consult a doctor</p>
+                <br>
+                    <div class="unwell-image">
+                        <img src="icons/symptoms.jpg" alt="" class="symptom-image">
+                        <img src="icons/causes.jpg" alt="" class="causes-image">
+                        <img src="icons/consult.jpg" alt="" class="consultation-image">
+    
+                        <button class="get-btn">Get Started&#10095;</button>
+                    </div>
+                </div>     
+            </div>
+    
+            <div class="consultation">
+                    <button class="number-btn"><i class="fa-solid fa-phone" id="phn-icon"></i>04012423453</button>
+
+                <div class="paragraph">
+                    <p>Round-the-clock doctor availability<br>
+                        Broad range of Specialities<br>
+                        Order medicines & tests online<br>
+                        Digitised health records<br></p>
+                </div>
+                <div class="work">
+                    <h5 id="work">How Doctor Consultation Works</h5>
+                    <div class="work-btn">
+                        <button class="text-btn">Text/Audio/Video</button>
+                        <button class="person-btn">Meet in Person</button>
+                    </div>
+                </div>
+                <div class="paragraph-doctor">
+                    <img src="icons/mobile.jpg" alt="" class="mobile-image">
+                    <p class="online-para">HOW TO CONSULT A DOCTOR ONLINE VIA TEXT/AUDIO/VIDEO?</p>
+                </div>
+
+                <div class="box2">
+                    <i class="fa-solid fa-user-doctor" id="box2"></i><p>Choose the Doctor</p>
+                    <i class="fa-solid fa-cross" id="box2"></i><p>Book an Appointment</p>
+                    <i class="fa-solid fa-money-check" id="box2"></i><p>Make Payment for the Appointment advance</p>
+                    <i class="fa-solid fa-mobile" id="box2"></i><p>Be present in the consult room at the time selected</p>
+                    <i class="fa-solid fa-message" id="box2"></i><p>Follow up via text - Valid upto 7 days</p><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up" id="pop-up">
+            <img src="icons/checked.png" alt="" class="tick-image">
+            <h2 id="pop-up-head">Thank You!</h2>
+            <p id="pop-up-msg">Your details has been successfully submitted. Thanks!</p>
+            <button class="pop-up-btn" type="button" onclick="closePopup()">Ok</button>
+        </div>
+
+    </main>
+
+    <footer>
+    <div class="foot_panel1">
+        Back to Top
+    </div>
+
+    <div class="foot_panel2">
+        <ul>
+        <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About</a>
+            <a>Health Queries</a>
+            <a>Corporate</a>
+            <a>FAQs</a>
+        </ul>
+
+        <ul>
+            <p>Services</p>
+                <a>Online Doctor Consultation</a>
+                <a>All Doctor List</a>
+                <a>Consult Physicians</a>
+                <a>Health Insurance</a>
+                <a>Consult Dermatologist</a>
+                <a>Consult Cardiolists</a>
+                <a>Consult Dibetologists</a>
+                <a>Consult ENT Specialistss</a>
+            </ul> 
+
+            <ul>
+                <p>Product Categories</p>
+                    <a>Personal Care</a>
+                    <a>Nutrition</a>
+                    <a>Immunity Boosters</a>
+                    <a>Dolo 650</a>
+            </ul>
+               
+        
+                <ul>
+                    <p>Let Us Help You</p>
+                        <a>COVID-19</a>
+                        <a>Your Account</a>
+                        <a>Your Orders</a>
+                        <a>Shipping Rates & Policies</a>
+                        <a>Return & Placements</a>
+                        <a>Health Devices</a>
+                        <a>Personal Assistant</a>
+                        <a>Help</a>
+                    </ul>
+    </div>
+
+    <div class="foot_panel3">
+        <div class="logo"></div>
+            <div class="globe_icon bor">
+                <i class="fa-solid fa-globe"></i>
+                English
+            </div>
+            <div class="dollar bor">
+                $  USD - U.S.Dollar
+            </div>
+            <div class="flag bor">
+                <i class="fa-regular fa-flag"></i>
+                Country
+            </div>
+    </div>
+
+
+    <div class="foot_panel4">
+        <div class="pages">
+            <a>Conditions Of Use</a>
+            <a>Privacy Notice</a>
+            <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+            © 1996-2024, Inc. or its affiliates
+        </div>
+    </div>
+</footer>
+
+<script>
+
+const buttonIds= ['homepage', 'doctorpage'];
+
+buttonIds.forEach(buttonId =>
+{
+const button=document.getElementById(buttonId)
+
+button.onclick=function()
+{
+
+    if(buttonId==='homepage')
+    {
+        window.location.href='index.html';
+    }
+    else if(buttonId==='doctorpage')
+    {
+        window.location.href='FindDoctor.html';
+    }
+    button.onclick=null;
+};
+});
+
+
+
+let popup = document.getElementById("pop-up")
+
+function openPopup()
+{
+    popup.classList.add("open-popup");
+}
+
+function closePopup()
+{
+    popup.classList.remove("open-popup");
+}
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

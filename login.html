@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5cd4730d1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" type="image" href="./Images/Logo.jpg">
+    <title>Login System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+            <div class="control">
+                <p id="login">LOGIN</p>
+                <p id="signUp">SIGN UP</p>
+            </div>
+
+            <span id="bar"></span>
+
+            <div class="loginBox" id="loginBox">
+            <form class="form" action="login" method="get">
+
+                <input type="text" name="name" id="email" placeholder="Enter your Username">
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <br><br><br>
+
+                <div style="display: flex; justify-content: space-between; width: 100%;">
+                    <div style="display: flex; width: 150px;">
+                        <input type="checkbox" name="remember" value="remember" class="rememberme">
+                        <label for="remember" class="remembermeText">Remember me</label>
+                    </div>
+                    <button onclick="do_login();">LOGIN</button>
+                    
+                </div>
+                </form>
+                
+
+                <div class="forgotPassword">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <div class="dontHave" id="signUp2">
+                    <p>Doesn't have account?</p>
+                    <p>Sign Up Now</p>
+                </div>
+            </div>
+
+            <div class="signUpBox" id="signUpBox">
+            <form class="form" action="signup" method="get">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <!-- <input type="text" name="dob" id="dob" placeholder="Enter your DOB (DD/MM/YYYY)"> -->
+                <input type="number" name="number" id="nymber" placeholder="Enter your Phone Number">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <input type="password" name="cnf_password" id="password" placeholder="Confirm password">
+                <br><br><br>
+
+                <button onclick="do_signup();">SIGN UP</button>
+			</form>
+                <div class="dontHave" id="login2">
+                    <p>Have account?</p>
+                    <p>Login Now</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
